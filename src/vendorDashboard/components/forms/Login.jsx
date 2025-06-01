@@ -25,6 +25,7 @@ const Login = ({showWelcomeHandler}) => {
             },
             body: JSON.stringify({email, password})
           })
+          console.log("here",response)
           const data = await response.json();
           if(response.ok){
             alert('Login success');

@@ -149,6 +149,7 @@ body {
 
 .checkInp label {
     width: 20%;
+
 }
 
 .inputsContainer {
@@ -169,7 +170,7 @@ body {
 }
 
 .checboxContainer input {
-    margin-left: -180px;
+    margin-left: -140px;
 }
 
 .checboxContainer label {

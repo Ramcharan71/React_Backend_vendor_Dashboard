@@ -16,7 +16,7 @@ const Register = ({ showLoginHandler }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setLoading(true); // Set loading to true when the request starts
+    setLoading(true); 
     try {
       const response = await fetch(`${API_URL}/vendor/register`, {
         method: 'POST',

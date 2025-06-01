@@ -82,15 +82,17 @@ const AddFirm = () => {
               alert('Failed to add Firm')
           }
 
-               const mango = data.firmId;
+          const mango = data.firmId;
           const vendorRestuarant = data.vendorFirmName
 
           localStorage.setItem('firmId', mango);
           localStorage.setItem('firmName', vendorRestuarant)
-          window.location.reload()
+//         setTimeout(() => {
+//   window.location.reload();
+// }, 500);
 
    } catch (error) {
-      console.error("failed to add Firm")
+      console.log(error)
       alert("failed to add Firm")
    } finally {
     setLoading(false); 
@@ -100,7 +102,7 @@ const AddFirm = () => {
 
   return (
         <div className="firmSection">
-   {loading &&        <div className="loaderSection">
+   {loading &&       <div className="loaderSection">
         <ThreeCircles
           visible={loading}
           height={100}
